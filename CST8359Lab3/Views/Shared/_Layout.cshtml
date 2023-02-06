@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Welcome to my CST8359 Lab 3 assignment - Hanieh Salimian</h1>
+        </div>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        <div>
+            <div>
+                <h4>Layout</h4>
+                @*Short description of what layout does*@
+                <p>A Layout file allows the programmer to reuse portions of View content (common elements) instead of implementing these visual elements on every page, thus reducing duplicate code in views.</p>
+                <h5>Explanation and reason as to how and why steps were taken to add _Layout file to Views/Shared directory</h5>
+                <p>Right click Views folder > Add > New Folder > Rename newly created folder Shared > Right click Shared folder > Add > New Item > Select Razor Layout > Click Add </p>
+                <p>
+                    By default, when a partial name (example _Layout) is provided in the ViewStart file, the Razor view engine searches for the layout file using its standard discovery process. 
+                    With this partial name the engine assumes that the layout file is not in the folder where the handler method (or controller) exists, and so it searches the Shared folder in the Views folder.</p>
+            </div>
+            <div>
+                <h4>CSS</h4>
+                <h5>Explanation and reason as to why steps were taken to add CSS file to wwwroot directory</h5>
+                <p>Right click project folder > Add > New Folder > Rename newly created folder wwwroot > Right click wwwroot folder > Add > New Item > Select Style Sheet > Click Add </p>
+                <p>Static files, such as HTML, CSS, images, and JavaScript, are assets an ASP.NET Core app serves directly to clients. By default static files are stored in the project's web root directory.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
