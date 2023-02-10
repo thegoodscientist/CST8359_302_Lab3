@@ -1,15 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CST8359Lab3.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CST8359Lab3.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult SongForm() => View();
+       
+        public IActionResult Index()
+        {
+            return View();
+        }
+        public IActionResult SongForm() => View();  
 
         [HttpPost]
         public IActionResult Sing()
         {
-            // you will complete this
+            ViewBag.numOfBottles = Request.Form["numOfBottles"];
+            return View();
         }
 
         public IActionResult CreateStudent() => View();
@@ -17,7 +24,7 @@ namespace CST8359Lab3.Controllers
         [HttpPost]
         public IActionResult DisplayStudent(Student student)
         {
-            // you will complete this
+            return View(student);
         }
         public IActionResult Error()
         {

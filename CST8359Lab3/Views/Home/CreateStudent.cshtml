@@ -1,0 +1,33 @@
+﻿
+@{
+}
+
+<form asp-controller="Home" asp-action="DisplayStrong" method="post">
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="FirstName" /></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="LastName" /></td>
+        </tr>
+        <tr>
+            <td>StudentId</td>
+            <td><input type="number" name="StudentId" /></td>
+        </tr>
+        <tr>
+            <td>Email Address</td>
+            <td><input type="email" name="EmailAddress" /></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="pass" /></td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><input type="text" name="StudentDescription" /></td>
+        </tr>
+    </table>
+    <input type="submit" value="Create" />
+</form>

@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Display Student";
+}
+
+<h3></h3>
+<table>
+    <tr>
+        <td>
+            First Name:
+        </td>
+        <td>
+            @Model.FirstName
+        </td>
+        <td>
+            Last Name:
+        </td>
+        <td>
+            @Model.LastName
+        </td>
+        <td>
+            Student ID:
+        </td>
+        <td>
+            @Model.StudentId
+        </td>
+        <td>
+            Email Address:
+        </td>
+        <td>
+            @Model.EmailAddress
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Student Description:
+        </td>
+        <td>
+            @Model.StudentDescription
+        </td>
+    </tr>
+</table>
