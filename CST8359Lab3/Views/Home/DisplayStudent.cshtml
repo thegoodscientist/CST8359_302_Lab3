@@ -4,40 +4,15 @@
     ViewData["Title"] = "Display Student";
 }
 
-<h3></h3>
-<table>
-    <tr>
-        <td>
-            First Name:
-        </td>
-        <td>
-            @Model.FirstName
-        </td>
-        <td>
-            Last Name:
-        </td>
-        <td>
-            @Model.LastName
-        </td>
-        <td>
-            Student ID:
-        </td>
-        <td>
-            @Model.StudentId
-        </td>
-        <td>
-            Email Address:
-        </td>
-        <td>
-            @Model.EmailAddress
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Student Description:
-        </td>
-        <td>
-            @Model.StudentDescription
-        </td>
-    </tr>
-</table>
+<div>
+    <span>First Name:</span>
+    <p>@Model.FirstName</p>
+    <span>Last Name:</span>
+    <p>@Model.LastName</p>
+    <span>Student ID:</span>
+    <p>@Model.StudentId</p>
+    <span>Email Address:</span>
+    <p>@Model.EmailAddress</p>
+    <span>Student Description:</span>
+    <p>@Model.StudentDescription</p>
+</div>

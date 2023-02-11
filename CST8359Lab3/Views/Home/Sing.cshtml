@@ -5,16 +5,24 @@
     int numOfBottles = Int32.Parse(ViewBag.numOfBottles);
 }
 
-
+<form asp-controller="Home" asp-action="SongForm" method="post">
+     <input type="submit" value="Play Again!" />
             @for (int i = numOfBottles; i >= 0; i--)
             {
                 @if (i>1)
                 {
-                    <p>@i green bottles hanging on the wall,</p>
-                    <p>@i green bottles hanging on the wall,</p>
-                    <p>And if one green bottle should accidentally fall,</p>
-                    <p>There'll be @(@i-1) green bottles hanging on the wall.</p>
-                    <br />
+                <p>@i green bottles hanging on the wall,</p>
+                <p>@i green bottles hanging on the wall,</p>
+                <p>And if one green bottle should accidentally fall,</p>
+                @if (i == 2){
+                <p>There'll be @(@i - 1) green bottle hanging on the wall.</p>
+
+            }
+            else
+            {
+                <p>There'll be @(@i - 1) green bottles hanging on the wall.</p>
+            }
+            <br />
                 }
                 else if (i==1)
                 {
@@ -31,4 +39,4 @@
                 }
 
             }
-
+</form>

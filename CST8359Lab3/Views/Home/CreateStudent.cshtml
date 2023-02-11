@@ -1,32 +1,33 @@
-﻿
-@{
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Create Student";
 }
 
-<form asp-controller="Home" asp-action="DisplayStrong" method="post">
+<form asp-controller="Home" asp-action="DisplayStudent" method="post">
     <table>
         <tr>
             <td>First Name</td>
-            <td><input type="text" name="FirstName" /></td>
+            <td><input type="text" name="FirstName" required/></td>
         </tr>
         <tr>
             <td>Last Name</td>
-            <td><input type="text" name="LastName" /></td>
+            <td><input type="text" name="LastName" required /></td>
         </tr>
         <tr>
             <td>StudentId</td>
-            <td><input type="number" name="StudentId" /></td>
+            <td><input type="number" name="StudentId" required/></td>
         </tr>
         <tr>
             <td>Email Address</td>
-            <td><input type="email" name="EmailAddress" /></td>
+            <td><input type="email" name="EmailAddress" required /></td>
         </tr>
         <tr>
             <td>Password</td>
-            <td><input type="password" name="pass" /></td>
+            <td><input type="password" name="pass" required /></td>
         </tr>
         <tr>
             <td>Description</td>
-            <td><input type="text" name="StudentDescription" /></td>
+            <td><input type="text" name="StudentDescription" required /></td>
         </tr>
     </table>
     <input type="submit" value="Create" />
