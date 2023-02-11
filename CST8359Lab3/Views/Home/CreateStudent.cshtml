@@ -3,6 +3,7 @@
     ViewData["Title"] = "Create Student";
 }
 
+<h2>Create Your Favourite Student</h2>
 <form asp-controller="Home" asp-action="DisplayStudent" method="post">
     <table>
         <tr>
@@ -15,7 +16,7 @@
         </tr>
         <tr>
             <td>StudentId</td>
-            <td><input type="number" name="StudentId" required/></td>
+            <td><input type="number" name="StudentId" min="1" required /></td>
         </tr>
         <tr>
             <td>Email Address</td>

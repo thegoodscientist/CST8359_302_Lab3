@@ -5,11 +5,12 @@ namespace CST8359Lab3.Controllers
 {
     public class HomeController : Controller
     {
-       
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
+
         public IActionResult SongForm() => View();  
 
         [HttpPost]
@@ -26,6 +27,7 @@ namespace CST8359Lab3.Controllers
         {
             return View(student);
         }
+
         public IActionResult Error()
         {
             return View();
